@@ -33,7 +33,7 @@ img {
     
     
      <script>
-      
+      function myFunction() {
       name = prompt("Who pressed this?","Name");
         var heading = document.querySelector("h1");
         if (name){ 
@@ -44,9 +44,11 @@ img {
           console.log("404 - G.A.B.E.N Not Found");
         }
       }
+             setTimeout(myFunction, 3000)
+
       </script>
     
-    <button onclick="setTimeout(myFunction(), 3000)">Big Red Button</button>
+    <button onclick="setTimeout(myFunction, 3000)">Big Red Button</button>
   </body>
   
 </html>
