@@ -30,15 +30,23 @@ img {
     <script>
       console.log("Hello World from the script tag!")
     </script>
-    <button onclick="setTimeout(myFunction, 3000)">Big Red Button</button>
+    
     
      <script>
-      function myFunction() {
+      
+      name = prompt("Who pressed this?","Name") {
+        var heading = document.querySelector("h1");
+        if (name){ 
+          heading.innerHTML = name + "made a mistake";
+        }
         alert("Rip Webrowser");
         while (true){
           console.log("404 - G.A.B.E.N Not Found");
         }
       }
       </script>
+    
+    <button onclick="setTimeout(myFunction(), 3000)">Big Red Button</button>
   </body>
+  
 </html>
