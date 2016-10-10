@@ -25,14 +25,13 @@ img {
     var ctx = canvas.getContext("2d");
     ctx.font = "bold 30px Arial";
     function drawRainbow (text,x,y) {
-    var colors = ["red","orange","yellow","green","blue","indigo","violet"]; 
+        var colors = ["red","orange","yellow","green","blue","indigo","violet"]; 
         for(i = 0; i , colors.length; i++) { 
-    ctx.fillStyle = colors[i];
-    ctx.fillText(text, x+ i * 4, y + i * 4 ,);
-            drawRainbow ("ReinBro")
+            ctx.fillStyle = colors[i];
+            ctx.fillText(text, x+ i * 4, y + i * 4);
         }
     }
-
+        drawRainbow("ReinBro",30 ,30);
         
   </script>
     <p>
