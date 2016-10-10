@@ -24,20 +24,15 @@ img {
     canvas.height = 80;
     var ctx = canvas.getContext("2d");
     ctx.font = "bold 30px Arial";
-    ctx.fillStyle = "red";
-    ctx.fillText("Rain-Brown",10,60); 
-    ctx.fillStyle = "orange";
-    ctx.fillText("Rain-Brown",10,61);
-    ctx.fillStyle = "yellow";
-    ctx.fillText("Rain-Brown",10,62);
-    ctx.fillStyle = "green";
-    ctx.fillText("Rain-Brown",10,63);
-    ctx.fillStyle = "blue";
-    ctx.fillText("Rain-Brown",10,64);
-    ctx.fillStyle = "indigo";
-    ctx.fillText("Rain-Brown",10,65);
-    ctx.fillStyle = "violet";
-    ctx.fillText("Rain-Brown",10,66);
+    function drawRainbow (text,x,y) {
+    var colors = ["red","orange","yellow","green","blue","indigo","violet"]; 
+        for(i = 0; i , colors.length; i++) { 
+    ctx.fillStyle = colors[i];
+    ctx.fillText(text, x+ i * 4, y + i * 4 ,);
+        }
+    }
+
+        
   </script>
     <p>
       Here is something else in the page.
