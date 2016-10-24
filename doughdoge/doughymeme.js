@@ -1,4 +1,6 @@
 var game = new Phaser.Game(360,420);
+var game = new Phaser.Game(360,420);
+var game = new Phaser.Game(360,420);
 console.log(game) 
 class Boot {
   preload() {
