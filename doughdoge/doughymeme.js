@@ -1,6 +1,25 @@
-var game = new Phaser.Game(360,420);
-var game = new Phaser.Game(360,420);
-var game = new Phaser.Game(360,420);
+var C = {
+  "game":{
+    "width": 360,
+    "height": 420
+  },
+  "cyes":{
+    "width": 360,
+    "height": 420,
+    "xspeed": 0, 
+    "yspeed":6969,
+    "Yes": "assets/Yes.jpg"
+  }
+  "p": {
+    "file": "assets/Lenny_Face.png",
+    "width": 31
+    "height": 31
+    "frames": 1
+  } 
+} 
+var game = new Phaser.Game(C.cyes.width,C.cyes.height);
+var game = new Phaser.Game(C.cyes.width,C.cyes.height);
+var game = new Phaser.Game(C.cyes.width,C.cyes.height);
 console.log(game) 
 class Boot {
   preload() {
@@ -16,7 +35,8 @@ class Boot {
 class Load { 
   preload() { 
     console.log("Loading...............:3...");
-    this.load.image("Yes","assets/Yes.jpg");
+    this.load.image("cyes",C.cyes.Yes);
+    this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames)
   }
   create() {
     console.log("Loaded");
@@ -27,10 +47,13 @@ class Load {
 class Play {
   create() {
     console.log("Entered Play ");
-    this.background = this.add.tileSprite(0,0,360,420,"Yes");
-    this.background.autoScroll(0,999);
+    this.background = this.add.tileSprite(0,0,C.cyes.width,C.cyes.height,"cyes");
+    this.background.autoScroll(C.cyes.xspeed,C.cyes.yspeed);
   }
 } 
+function restart() {
+  game.state.start("Boot");
+}
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
 game.state.add("Play", Play);
