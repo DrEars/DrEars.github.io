@@ -9,7 +9,7 @@ var C = {
     "xspeed": 0, 
     "yspeed":6969,
     "Yes": "assets/Yes.jpg"
-  }
+  },
   "p": {
     "file": "assets/Lenny_Face.png",
     "width": 31
