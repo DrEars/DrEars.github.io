@@ -12,8 +12,8 @@ var C = {
   },
   "p": {
     "file": "assets/Lenny_Face.png",
-    "width": 31
-    "height": 31
+    "width": 31,
+    "height": 31,
     "frames": 1
   } 
 } 
