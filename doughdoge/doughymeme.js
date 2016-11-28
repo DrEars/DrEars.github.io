@@ -28,8 +28,6 @@ var C = {
   } 
 }
 var game = new Phaser.Game(C.cyes.width,C.cyes.height);
-var game = new Phaser.Game(C.cyes.width,C.cyes.height);
-var game = new Phaser.Game(C.cyes.width,C.cyes.height);
 console.log(game) 
 class Boot {
   preload() {
@@ -65,6 +63,10 @@ class Play {
     this.player.anchor.set(0.5,0.5);
     this.player.smoothed = false;
     this.player.scale.set(4.20);
+    this.enemy = this.add.sprite(C.e.startx,C.e.starty,"enemy");
+    this.enemy.anchor.set(0.5,0.5);
+    this.enemy.smoothed = false;
+    this.enemy.scale.set(24.0);
   }
   update() { 
     console.log("createCursorKeys() called.");
