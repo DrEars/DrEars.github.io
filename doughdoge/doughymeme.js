@@ -4,8 +4,8 @@ var C = {
     "height": 420
   },
   "cyes":{
-    "width": 360,
-    "height": 420,
+    "width": 720,
+    "height": 780,
     "xspeed": 0, 
     "yspeed":6969,
     "Yes": "assets/Yes.jpg"
@@ -23,8 +23,9 @@ var C = {
     "width": 40,
     "height": 64,
     "frames": 1,
-    "startx": 200,
-    "starty": 210
+    "startx": 450,
+    "starty": 260,
+    "speed": 20 
   } 
 }
 var game = new Phaser.Game(C.cyes.width,C.cyes.height);
@@ -66,12 +67,15 @@ class Play {
     this.enemy = this.add.sprite(C.e.startx,C.e.starty,"enemy");
     this.enemy.anchor.set(0.5,0.5);
     this.enemy.smoothed = false;
-    this.enemy.scale.set(24.0);
+    this.enemy.scale.set(.1);
   }
   update() { 
     console.log("createCursorKeys() called.");
   }
-}
+  render() {
+    console.log("Play.render() debug.text()") 
+    }
+  }
 function restart() {
   game.state.start("Boot");
 }
