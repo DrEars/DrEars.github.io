@@ -15,8 +15,8 @@ var C = {
     "width": 31,
     "height": 31,
     "frames": 1,
-    "startx": 180,
-    "starty": 469,
+    "startx": 0,
+    "starty": 669,
     "speed": 12.420,
     "scale": 2.0
   } ,
