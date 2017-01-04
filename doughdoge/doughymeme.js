@@ -9,18 +9,24 @@ var C = {
     "xspeed": 0, 
     "yspeed":6969,
     "Yes": "assets/Yes.jpg"
+    //"Yes": "assets/road.png"
   },
   "p": {
+    //"file": "assets/Dodgecar.png",
     "file": "assets/Lenny_Face.png",
+    //"width": 10,
     "width": 31,
+    //"height": 26,
     "height": 31,
     "frames": 1,
+    //"frames": 32,
     "startx": 350,
     "starty": 669,
     "speed": 10.420,
     "scale": 2.0
   } ,
   "e": { 
+    //"file": "assets/wall.png",
     "file": "assets/kek.png",
     "width": 40,
     "height": 64,
