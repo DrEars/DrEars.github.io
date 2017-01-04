@@ -35,8 +35,8 @@ var C = {
     "frames": 1,
     "startx": 450,
     "starty": 10,
-    "speed": 10
-    "scale": 6.0
+    "speed": 10,
+    "scale": 12.0
   } 
 }
 var game = new Phaser.Game(C.cyes.width,C.cyes.height);
