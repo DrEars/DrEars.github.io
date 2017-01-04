@@ -29,7 +29,9 @@ var C = {
     //"file": "assets/wall.png",
     "file": "assets/kek.png",
     "width": 40,
+    //"width": 40,
     "height": 64,
+    //"height": 51,
     "frames": 1,
     "startx": 450,
     "starty": 10,
@@ -52,6 +54,7 @@ class Boot {
 class Load { 
   preload() { 
     console.log("Loading...............:3...");
+    //this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.image("cyes",C.cyes.Yes);
     this.load.image("enemy",C.e.file,C.e.width,C.e.height,C.e.frames);
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames)
