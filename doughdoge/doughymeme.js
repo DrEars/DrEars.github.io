@@ -73,8 +73,10 @@ class Play {
     this.background = this.add.tileSprite(0,0,C.cyes.width,C.cyes.height,"cyes");
     this.background.autoScroll(C.cyes.xspeed,C.cyes.yspeed);
     game.player = this.add.sprite(C.p.startx,C.p.starty,"player");
+    game.player.animations.add("drive");
+    game.player.animations.play("drive", c.p.frames,true);
     game.player.anchor.set(0.5,0.5);
-    game.player.smoothed = false;
+    game.player.smoothed = true;
     game.player.scale.set(C.p.scale);
     this.enemies = game.add.group();
     for (var i = 0; i <6; i++) {
