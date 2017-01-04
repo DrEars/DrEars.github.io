@@ -12,7 +12,7 @@ var C = {
     //"Yes": "assets/road.png"
   },
   "p": {
-    //"file": "assets/Dodgecar.png",
+    //"file": "assets/Dodgecar .png",
     "file": "assets/Lenny_Face.png",
     //"width": 10,
     "width": 31,
