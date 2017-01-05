@@ -12,7 +12,7 @@ var C = {
     //"Yes": "assets/road.png"
   },
   "p": {
-    "file": "assets/Dodgecar .png",
+    "file": "assets/Dodgecar.png",
     //"file": "assets/Lenny_Face.png",
     "width": 10,
     //"width": 31,
@@ -36,7 +36,6 @@ var C = {
     "startx": 450,
     "starty": 10,
     "speed": 10,
-    "scale": 12.0
   } 
 }
 var game = new Phaser.Game(C.cyes.width,C.cyes.height);
@@ -83,7 +82,7 @@ class Play {
     var enemy = this.enemies.create(randInt(game.width), C.e.starty, "enemy"); 
     enemy.anchor.set(0.5,0.5);
     enemy.smoothed = false;
-    enemy.scale.set(.1);
+    enemy.scale.set(4.0);
     }
     this.cursors = this.input.keyboard.createCursorKeys();
   }
