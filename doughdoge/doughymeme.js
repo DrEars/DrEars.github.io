@@ -73,7 +73,7 @@ class Play {
     this.background.autoScroll(C.cyes.xspeed,C.cyes.yspeed);
     game.player = this.add.sprite(C.p.startx,C.p.starty,"player");
     game.player.animations.add("drive");
-    game.player.animations.play("drive", c.p.frames,true);
+    game.player.animations.play("drive", C.p.frames,true);
     game.player.anchor.set(0.5,0.5);
     game.player.smoothed = true;
     game.player.scale.set(C.p.scale);
