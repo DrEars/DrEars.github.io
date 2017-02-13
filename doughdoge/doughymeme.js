@@ -8,8 +8,8 @@ var C = {
     "height": 780,
     "xspeed": 0, 
     "yspeed":6969,
-    "Yes": "assets/Yes.jpg"
-    //"Yes": "assets/road.png"
+    //"Yes": "assets/Yes.jpg"
+    "Yes": "assets/road.png"
   },
   "p": {
     "file": "assets/Dodgecar.png",
