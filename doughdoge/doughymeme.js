@@ -82,7 +82,7 @@ class Play {
     var enemy = this.enemies.create(randInt(game.width), C.e.starty, "enemy"); 
     enemy.anchor.set(0.5,0.5);
     enemy.smoothed = false;
-    enemy.scale.set(4.0);
+    enemy.scale.set(3.0);
     }
     this.cursors = this.input.keyboard.createCursorKeys();
   }
