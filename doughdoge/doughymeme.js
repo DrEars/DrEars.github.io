@@ -7,7 +7,7 @@ var C = {
     "width": 720,
     "height": 780,
     "xspeed": 0, 
-    "yspeed": 500,
+    "yspeed": 600,
     //"Yes": "assets/Yes.jpg"
     //"Yes": "assets/roadm.png"
     "Yes": "assets/roadpc.png"
