@@ -1,7 +1,7 @@
 var C = {
   "game":{
     "width": 720,
-    "height": 780
+    "height": 830
   },
   "cyes":{
     "width": 720,
