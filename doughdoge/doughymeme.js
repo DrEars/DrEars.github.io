@@ -35,7 +35,7 @@ var C = {
     "height": 51,
     "frames": 1,
     "startx": 450,
-    "starty": 10,
+    "starty": 20,
     "speed": 10,
   } 
 }
