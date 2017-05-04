@@ -36,7 +36,7 @@ var C = {
     "frames": 1,
     "startx": 450,
     "starty": 20,
-    "speed": 10,
+    "speed": 10
   } 
 }
 var game = new Phaser.Game(C.cyes.width,C.cyes.height);
@@ -58,7 +58,7 @@ class Load {
     //this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.image("cyes",C.cyes.Yes);
     this.load.image("enemy",C.e.file,C.e.width,C.e.height,C.e.frames);
-    this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames)
+    this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
   }
 
   create() {
@@ -96,7 +96,7 @@ class Play {
     }
   this.enemies.forEach(function(enemy) {
     if (enemy.y > C.game.height) {
-      enemy.y = C.e.starty
+      enemy.y = C.e.starty;
       enemy.x = randInt(C.game.width);
     }
    enemy.y += C.e.speed;
