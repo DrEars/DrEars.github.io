@@ -37,7 +37,16 @@ var C = {
     "startx": 450,
     "starty": 20,
     "speed": 10
-  } 
+  } ,
+  "w":{
+    "file": "assets/building.png",
+    "width": 92,
+    "height": 92,
+    "frames": 1,
+    "startx": 450,
+    "starty": 25,
+    "speed": 10
+  }  
 }
 var game = new Phaser.Game(C.cyes.width,C.cyes.height);
 console.log(game) 
@@ -54,10 +63,11 @@ class Boot {
 
 class Load { 
   preload() { 
-    console.log("Loading...............:3...");
+    console.log("Loading.-._.-._.-._.-._.-........");
     //this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.image("cyes",C.cyes.Yes);
     this.load.image("enemy",C.e.file,C.e.width,C.e.height,C.e.frames);
+    this.load.image("wall",c.w.file,c.w.width,c.w.height,c.w.frames);
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
   }
 
@@ -100,7 +110,8 @@ class Play {
       enemy.x = randInt(C.game.width);
     }
    enemy.y += C.e.speed;
-  
+    
+      
   if (checkOverlap(enemy, game.player))
     {
       restart()
