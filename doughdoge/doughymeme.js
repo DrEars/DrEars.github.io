@@ -38,7 +38,7 @@ var C = {
     "starty": 20,
     "speed": 10
   } ,
-  "w":{
+  "w": {
     "file": "assets/building.png",
     "width": 92,
     "height": 92,
