@@ -32,7 +32,7 @@ var C = {
     //"width": 40,
     "width": 40,
     //"height": 64,
-    "height": 51,
+    "height": 22,
     "frames": 1,
     "startx": 450,
     "starty": 20,
@@ -67,7 +67,7 @@ class Load {
     //this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.image("cyes",C.cyes.Yes);
     this.load.image("enemy",C.e.file,C.e.width,C.e.height,C.e.frames);
-    //this.load.image("wall",c.w.file,c.w.width,c.w.height,c.w.frames);
+    this.load.image("wall",c.w.file,c.w.width,c.w.height,c.w.frames);
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
   }
 
@@ -94,6 +94,7 @@ class Play {
     enemy.anchor.set(0.5,0.5);
     enemy.smoothed = false;
     enemy.scale.set(3.0);
+    this.wall = this.add.tilesprite(0,0,c.w.startx,c.cyes.height,"wall");  
     }
     this.cursors = this.input.keyboard.createCursorKeys();
   }
