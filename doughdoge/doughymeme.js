@@ -3,6 +3,11 @@ var C = {
     "width": 720,
     "height": 830
   },
+var m = {
+  "menuGroup":{
+    "width": 720,
+    "height": 830
+  },
   "cyes":{
     "width": 720,
     "height": 780,
@@ -106,6 +111,10 @@ class Play {
     }
     if (this.cursors.right.isDown) {
       game.player.x += C.p.speed;
+    }
+  this.player.forEach(function(player) {
+    if (player.x > c.game.width) {
+      enemy.x = C.p.startx;
     }
   this.enemies.forEach(function(enemy) {
     if (enemy.y > C.game.height) {
