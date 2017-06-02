@@ -7,13 +7,14 @@ var C = {
     "width": 720,
     "height": 780,
     "xspeed": 0, 
-    "yspeed": 300,
+    "yspeed": 450,
     //"Yes": "assets/Yes.jpg"
     //"Yes": "assets/roadm.png"
     "Yes": "assets/roadpc.png"
   },
   "p": {
-    "file": "assets/Dodgecar.png",
+    "file": "assets/Dodgecar_g.png",
+    //"file": "assets/Dodgecar.png",
     //"file": "assets/Lenny_Face.png",
     "width": 10,
     //"width": 31,
@@ -24,7 +25,7 @@ var C = {
     "startx": 350,
     "starty": 669,
     "speed": 10.420,
-    "scale": 2.0
+    "scale": 2.5
   } ,
   "e": { 
     "file": "assets/wall.png",
@@ -36,7 +37,7 @@ var C = {
     "frames": 1,
     "startx": 450,
     "starty": 20,
-    "speed": 5
+    "speed": 7
   } ,
   "w": {
     "file": "assets/building.png",
