@@ -25,7 +25,7 @@ var C = {
     "startx": 350,
     "starty": 669,
     "speed": 10.420,
-    "scale": 2.5
+    "scale": 1.5
   } ,
   "e": { 
     "file": "assets/wall.png",
