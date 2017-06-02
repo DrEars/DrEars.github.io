@@ -25,7 +25,7 @@ var C = {
     "frames": 6,
     "startx": 350,
     "starty": 669,
-    "speed": 10.420,
+    "speed": 10,
     "scale": 1.5
   } ,
   "e": { 
