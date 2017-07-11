@@ -3,11 +3,11 @@ var C = {
     "width": 720,
     "height": 830
   },
-var m = {
-  "menuGroup":{
-    "width": 720,
-    "height": 830
-  },
+// var m = {
+//  "menuGroup":{
+ //   "width": 720,
+   // "height": 830
+  // },
   "cyes":{
     "width": 720,
     "height": 780,
