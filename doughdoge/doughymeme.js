@@ -124,7 +124,7 @@ class Play {
       restart()
   }
   });
-  }
+  })
   render() {
     console.log("Play.render() debug.text()") 
     
